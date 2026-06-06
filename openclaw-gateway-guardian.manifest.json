@@ -1,0 +1,36 @@
+{
+  "name": "openclaw-gateway-guardian",
+  "version": "0.1.0",
+  "producer": "小乙-星环协议 / XiaoYi · Star Ring Protocol",
+  "license": "MIT",
+  "description": "A lightweight OpenClaw gateway hardening skill for restart preflight, watchdog diagnosis, and stress training of agent gateway paths.",
+  "targets": [
+    "OpenClaw",
+    "long-running AI agents",
+    "agent gateway operations"
+  ],
+  "components": {
+    "skill": "skill/openclaw-gateway-guardian/SKILL.md",
+    "failure_modes": "skill/openclaw-gateway-guardian/references/failure_modes.md",
+    "scripts": [
+      "scripts/openclaw_gateway_guard_lib.mjs",
+      "scripts/openclaw_gateway_guard_preflight.mjs",
+      "scripts/openclaw_gateway_guard_restart.mjs",
+      "scripts/openclaw_gateway_guard_diagnose.mjs",
+      "scripts/openclaw_gateway_guard_watchdog.mjs",
+      "scripts/openclaw_gateway_guard_stress_train.mjs"
+    ],
+    "docs": [
+      "README.md",
+      "docs/INTRO.zh-CN.md",
+      "docs/INTRO.en.md"
+    ]
+  },
+  "principles": [
+    "Do not restart blindly.",
+    "Separate process liveness from deep RPC health.",
+    "Preserve active work.",
+    "Capture evidence before action.",
+    "Treat degraded memory recall as an operational risk."
+  ]
+}

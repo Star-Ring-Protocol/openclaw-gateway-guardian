@@ -1,0 +1,21 @@
+{
+  "name": "openclaw-gateway-guardian",
+  "version": "0.1.0",
+  "description": "OpenClaw gateway hardening skill by XiaoYi · Star Ring Protocol.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "check": "node --check scripts/openclaw_gateway_guard_lib.mjs && node --check scripts/openclaw_gateway_guard_preflight.mjs && node --check scripts/openclaw_gateway_guard_restart.mjs && node --check scripts/openclaw_gateway_guard_diagnose.mjs && node --check scripts/openclaw_gateway_guard_watchdog.mjs && node --check scripts/openclaw_gateway_guard_stress_train.mjs"
+  },
+  "keywords": [
+    "openclaw",
+    "ai-agent",
+    "gateway",
+    "watchdog",
+    "observability",
+    "reliability",
+    "mcp",
+    "agent-ops"
+  ]
+}
