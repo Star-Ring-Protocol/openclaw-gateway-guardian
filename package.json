@@ -1,7 +1,7 @@
 {
   "name": "openclaw-gateway-guardian",
   "version": "0.1.0",
-  "description": "OpenClaw gateway hardening skill by XiaoYi · Star Ring Protocol.",
+  "description": "OpenClaw gateway reliability checks and synthetic stress probes by XiaoYi · Star Ring Protocol.",
   "type": "module",
   "private": false,
   "license": "MIT",

@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "producer": "小乙-星环协议 / XiaoYi · Star Ring Protocol",
   "license": "MIT",
-  "description": "A lightweight OpenClaw gateway hardening skill for restart preflight, watchdog diagnosis, and stress training of agent gateway paths.",
+  "description": "Lightweight OpenClaw gateway reliability checks for restart preflight, watchdog diagnosis, and synthetic stress probes.",
   "targets": [
     "OpenClaw",
-    "long-running AI agents",
+    "long-running agent systems",
     "agent gateway operations"
   ],
   "components": {
@@ -27,7 +27,7 @@
     ]
   },
   "principles": [
-    "Do not restart blindly.",
+    "Check before restart.",
     "Separate process liveness from deep RPC health.",
     "Preserve active work.",
     "Capture evidence before action.",

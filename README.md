@@ -6,15 +6,15 @@
 
 <p align="center"><strong>小乙-星环协议出品 / Produced by XiaoYi · Star Ring Protocol</strong></p>
 
-OpenClaw Gateway Guardian is a lightweight reliability skill for OpenClaw operators and agent builders. It helps prevent blind gateway restarts, diagnose timeout-like failures, and stress-test agent gateway paths before a slow memory/tool route turns into a user-visible outage.
+OpenClaw Gateway Guardian is a small reliability toolkit for OpenClaw operators and agent gateway maintainers. It checks restart risk, captures gateway evidence, and runs bounded synthetic pressure tests against health, status, task, audit, and memory-search paths.
 
-It is intentionally small: no cloud dependency, no database migration, no model key required. It reads OpenClaw status, health, task audit, stability heartbeats, logs, and local diagnostic signals, then writes structured reports under the OpenClaw workspace.
+It has no cloud dependency, database migration, or model key requirement. It reads local OpenClaw signals and writes structured reports under the OpenClaw workspace.
 
-> Not a magic anti-crash patch. A practical guardrail for long-running AI agents.
+It is an operator aid, not a replacement for gateway fixes.
 
 ## Why It Exists
 
-AI agent gateways fail in boring but expensive ways:
+Gateway incidents often look similar from the UI:
 
 - The UI says `gateway disconnected`, but the gateway process is still alive.
 - A WebSocket handshake times out, but a simple health probe still works.
@@ -22,7 +22,7 @@ AI agent gateways fail in boring but expensive ways:
 - Someone restarts the gateway while active work is still running.
 - Memory search silently falls back to a degraded slow path.
 
-Gateway Guardian separates these cases and gives the operator a safer next move.
+Gateway Guardian separates these cases before an operator restarts the process.
 
 ## What It Does
 
@@ -30,7 +30,7 @@ Gateway Guardian separates these cases and gives the operator a safer next move.
 - **Watchdog**: classifies gateway state as `healthy`, `degraded`, or `critical`.
 - **Diagnosis report**: captures status, health, running tasks, audit errors, stability heartbeat, process stats, and recent log evidence.
 - **Dry-run restart wrapper**: shows what would happen without touching the gateway.
-- **Stress training**: replays vertical scenario queries across route, semantic, vector, memory search, health, status, tasks, and audit surfaces.
+- **Synthetic stress run**: probes health, status, task, audit, tool, and memory-search paths under bounded load.
 - **Memory degradation detection**: flags `sqlite-vec unavailable`, degraded vector recall, stuck sessions, cron/model timeouts, and related long-tail risks.
 
 ## What It Does Not Do
@@ -44,7 +44,7 @@ Gateway Guardian separates these cases and gives the operator a safer next move.
 ## Quick Start
 
 ```sh
-git clone https://github.com/YOUR_ORG/openclaw-gateway-guardian.git
+git clone https://github.com/Star-Ring-Protocol/openclaw-gateway-guardian.git
 cd openclaw-gateway-guardian
 ./install.sh
 ```
@@ -80,9 +80,9 @@ $OPENCLAW_ROOT/workspace/diagnostics/gateway-guardian/
 $OPENCLAW_ROOT/workspace/diagnostics/gateway-guardian-stress/
 ```
 
-## Real Test Signal
+## Test Signal
 
-In field testing, Gateway Guardian was exercised with synthetic workloads that mimic common long-running agent pressure patterns:
+The stress runner uses synthetic workloads for common gateway pressure patterns:
 
 - long context handoff
 - high-frequency tool probes
@@ -90,17 +90,15 @@ In field testing, Gateway Guardian was exercised with synthetic workloads that m
 - concurrent control-plane checks
 - long-running slow-path diagnosis
 
-The point is not to expose private workload data. The point is to measure whether gateway health, status, task audit, memory/search paths, and guardian checks still behave under pressure.
-
-That is the spirit of this skill: do not guess, measure.
+The repository does not include private workload data. The stress output records whether gateway health, status, task audit, memory/search paths, and guardian checks still behave under load.
 
 ## Chinese Overview / 中文简介
 
-OpenClaw Gateway Guardian 是一个轻量级的 OpenClaw 网关加固 skill，由 **小乙-星环协议** 出品。
+OpenClaw Gateway Guardian 是一个面向 OpenClaw 的轻量级网关可靠性工具，由 **小乙-星环协议** 出品。
 
-它不是“永不崩溃”的神奇补丁，而是一套实用的运行守护工具：在你重启 gateway 之前，它会检查是否还有任务在跑、是否有卡住的 session、是否存在 cron/model timeout、memory search 是否退化、gateway 到底是死了还是只是深层 RPC 变慢。
+它用于重启前预检、故障诊断和合成压力测试。重启 gateway 之前，它会检查是否还有任务在跑、是否有卡住的 session、是否存在 cron/model timeout、memory search 是否退化，以及 gateway 是真的不可用还是深层 RPC 变慢。
 
-它适合长期运行的 AI agent 系统，尤其适合那些已经遇到过：
+它适合长期运行的 agent 系统，尤其适合那些已经遇到过：
 
 - TUI 显示 gateway disconnected
 - handshake timeout
@@ -110,9 +108,9 @@ OpenClaw Gateway Guardian 是一个轻量级的 OpenClaw 网关加固 skill，�
 - memory search 变慢
 - 盲目重启导致任务丢失
 
-核心价值一句话：
+核心价值：
 
-> 少重启一次，少丢一次任务；早定位一次，少熬一次夜。
+减少盲目重启，保留诊断证据，降低长任务被中断的概率。
 
 ## Repository Layout
 
@@ -142,4 +140,4 @@ MIT License.
 
 Produced by **小乙-星环协议 / XiaoYi · Star Ring Protocol**.
 
-Built from real OpenClaw gateway hardening work and pressure-tested against multi-scene agent workloads.
+The public stress runner uses synthetic workload probes and contains no private workload data.
