@@ -15,7 +15,7 @@ It does not upload files. It builds a plan for local conversion, section anchors
 - Keep the original file path out of public output when the path reveals local machine details.
 - Preserve source anchors for every extracted section.
 - Mark uncertain extraction results instead of filling gaps.
-- Do not write to shared memory, remote storage, or external services as part of preflight.
+- Do not write to a persistent memory store, remote storage, or external services as part of preflight.
 
 ## Workflow
 
@@ -46,4 +46,3 @@ It does not upload files. It builds a plan for local conversion, section anchors
 - No automatic account login.
 - No external upload.
 - No silent conversion of files outside the approved input list.
-

@@ -12,7 +12,7 @@ The goal is simple operational writing: what the tool does, what it reads, what 
 ## Checks
 
 - Remove vague claims about scope or automation unless the behavior is measured and documented.
-- Remove template placeholders, stale examples, local-only paths, and unexplained internal labels.
+- Remove template placeholders, stale examples, local-only paths, and unexplained project-specific labels.
 - Remove credentials, tokens, personal identifiers, account IDs, and environment-specific values.
 - Replace hidden implementation context with public behavior and explicit limits.
 - Keep attribution and license notes factual.
