@@ -32,6 +32,7 @@ Gateway Guardian separates these cases before an operator restarts the process.
 - **Dry-run restart wrapper**: shows what would happen without touching the gateway.
 - **Synthetic stress run**: probes health, status, task, audit, tool, and memory-search paths under bounded load.
 - **Memory degradation detection**: flags `sqlite-vec unavailable`, degraded vector recall, stuck sessions, cron/model timeouts, and related long-tail risks.
+- **Maintainer skills**: installs reusable OpenClaw skill templates for bounded agent loops, public copy review, document preflight, evidence notebooks, OSS intake, document review, and prompt optimization.
 
 ## What It Does Not Do
 
@@ -92,6 +93,20 @@ The stress runner uses synthetic workloads for common gateway pressure patterns:
 
 The repository does not include private workload data. The stress output records whether gateway health, status, task audit, memory/search paths, and guardian checks still behave under load.
 
+## Maintainer Skill Pack
+
+The `skill/` directory includes a small public skill pack for OpenClaw maintainers:
+
+- `openclaw-agent-loop`: bounded diagnose/change/validate/keep-or-revert loop.
+- `openclaw-copy-guard`: public documentation and release copy review.
+- `openclaw-document-preflight`: local document to source-anchored Markdown planning.
+- `openclaw-document-review`: source-linked review against explicit criteria.
+- `openclaw-evidence-notebook`: local source-constrained evidence notebook.
+- `openclaw-oss-intake`: public open-source project intake before adoption.
+- `openclaw-prompt-optimizer`: turn vague maintainer requests into executable prompts.
+
+These skills are written as public operator templates. They do not include non-public project code, runtime logs, account data, or deployment-specific configuration.
+
 ## Chinese Overview / 中文简介
 
 OpenClaw Gateway Guardian 是一个面向 OpenClaw 的轻量级网关可靠性工具，由 **小乙-星环协议** 出品。
@@ -118,6 +133,14 @@ OpenClaw Gateway Guardian 是一个面向 OpenClaw 的轻量级网关可靠性�
 skill/openclaw-gateway-guardian/
   SKILL.md
   references/failure_modes.md
+
+skill/openclaw-agent-loop/
+skill/openclaw-copy-guard/
+skill/openclaw-document-preflight/
+skill/openclaw-document-review/
+skill/openclaw-evidence-notebook/
+skill/openclaw-oss-intake/
+skill/openclaw-prompt-optimizer/
 
 scripts/
   openclaw_gateway_guard_lib.mjs

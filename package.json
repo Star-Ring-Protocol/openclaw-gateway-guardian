@@ -1,7 +1,7 @@
 {
   "name": "openclaw-gateway-guardian",
-  "version": "0.1.0",
-  "description": "OpenClaw gateway reliability checks and synthetic stress probes by XiaoYi · Star Ring Protocol.",
+  "version": "0.2.0",
+  "description": "OpenClaw gateway reliability checks, synthetic stress probes, and maintainer skill templates by XiaoYi · Star Ring Protocol.",
   "type": "module",
   "private": false,
   "license": "MIT",
