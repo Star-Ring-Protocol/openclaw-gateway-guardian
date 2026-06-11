@@ -1,5 +1,5 @@
 ---
-name: openclaw-agent-loop
+name: oc-agent-loop
 description: Run a bounded maintainer loop for local OpenClaw changes. Use when a task needs diagnosis, a small candidate change, validation, and an explicit keep or revert decision.
 ---
 
@@ -47,4 +47,3 @@ This skill is not an autonomous production updater. It keeps the loop local, bou
 - No broad refactors.
 - No silent dependency installation.
 - No changes to secrets, accounts, or environment-specific configuration.
-

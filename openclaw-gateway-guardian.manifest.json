@@ -10,17 +10,17 @@
     "agent gateway operations"
   ],
   "components": {
-    "primary_skill": "skill/openclaw-gateway-guardian/SKILL.md",
+    "primary_skill": "skill/oc-gateway-guardian/SKILL.md",
     "maintainer_skills": [
-      "skill/openclaw-agent-loop/SKILL.md",
-      "skill/openclaw-copy-guard/SKILL.md",
-      "skill/openclaw-document-preflight/SKILL.md",
-      "skill/openclaw-document-review/SKILL.md",
-      "skill/openclaw-evidence-notebook/SKILL.md",
-      "skill/openclaw-oss-intake/SKILL.md",
-      "skill/openclaw-prompt-optimizer/SKILL.md"
+      "skill/oc-agent-loop/SKILL.md",
+      "skill/oc-copy-guard/SKILL.md",
+      "skill/oc-document-preflight/SKILL.md",
+      "skill/oc-document-review/SKILL.md",
+      "skill/oc-evidence-notebook/SKILL.md",
+      "skill/oc-oss-intake/SKILL.md",
+      "skill/oc-prompt-optimizer/SKILL.md"
     ],
-    "failure_modes": "skill/openclaw-gateway-guardian/references/failure_modes.md",
+    "failure_modes": "skill/oc-gateway-guardian/references/failure_modes.md",
     "scripts": [
       "scripts/openclaw_gateway_guard_lib.mjs",
       "scripts/openclaw_gateway_guard_preflight.mjs",

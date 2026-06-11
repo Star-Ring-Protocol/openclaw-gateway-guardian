@@ -1,5 +1,5 @@
 ---
-name: openclaw-oss-intake
+name: oc-oss-intake
 description: Evaluate public open-source projects before adopting their ideas, dependencies, or code into an OpenClaw workflow.
 ---
 
@@ -42,4 +42,3 @@ The goal is to learn from public work without blindly importing risk.
 - No copying unknown scripts into the runtime.
 - No production execution during intake.
 - No adoption based only on stars, screenshots, or social posts.
-

@@ -1,5 +1,5 @@
 ---
-name: openclaw-evidence-notebook
+name: oc-evidence-notebook
 description: Build a local, source-constrained evidence notebook for maintainer decisions, incident review, and documentation updates.
 ---
 
@@ -38,4 +38,3 @@ The notebook keeps facts tied to sources. It is useful for incident notes, relea
 - No broad web research unless explicitly requested.
 - No unsourced conclusions.
 - No external upload or indexing by default.
-

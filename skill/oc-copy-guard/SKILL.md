@@ -1,5 +1,5 @@
 ---
-name: openclaw-copy-guard
+name: oc-copy-guard
 description: Review public docs, release notes, prompts, and skill files before publication. Use to remove hype, template residue, unsupported claims, sensitive data, and unclear operator instructions.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: openclaw-prompt-optimizer
+name: oc-prompt-optimizer
 description: Convert unclear maintainer requests into executable prompts with variables, missing information, test cases, and acceptance criteria.
 ---
 
@@ -40,4 +40,3 @@ The optimized prompt should preserve the user's intent while making scope, input
 - No prompt injection bypass.
 - No fabricated context.
 - No automatic execution after prompt generation unless the user asks for execution.
-

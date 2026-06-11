@@ -1,5 +1,5 @@
 ---
-name: openclaw-document-review
+name: oc-document-review
 description: Review messy documents against explicit criteria and return source-linked findings, risk levels, and follow-up questions.
 ---
 
@@ -39,4 +39,3 @@ The review must be grounded in explicit criteria. If criteria are missing, first
 - No hidden policy decisions.
 - No invented citations.
 - No claims that exceed the provided source material.
-

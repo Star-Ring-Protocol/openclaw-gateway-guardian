@@ -1,5 +1,5 @@
 ---
-name: openclaw-gateway-guardian
+name: oc-gateway-guardian
 description: Harden and operate the OpenClaw Gateway safely. Use before restarting, upgrading, patching runtime, diagnosing gateway timeout, TUI disconnected/tick timeout, handshake timeout, stuck sessions, slow RPC, background cron/model timeout, or memory maintenance stalls.
 ---
 
@@ -66,7 +66,7 @@ Then explain:
 For details and triage patterns, read:
 
 ```sh
-$OPENCLAW_ROOT/workspace/skills/openclaw-gateway-guardian/references/failure_modes.md
+$OPENCLAW_ROOT/workspace/skills/oc-gateway-guardian/references/failure_modes.md
 ```
 
 Load it only when diagnosing a real incident or modifying the guardian scripts.

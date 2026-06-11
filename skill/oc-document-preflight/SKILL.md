@@ -1,5 +1,5 @@
 ---
-name: openclaw-document-preflight
+name: oc-document-preflight
 description: Convert authorized local documents into source-anchored Markdown plans before review, summarization, or agent handoff.
 ---
 

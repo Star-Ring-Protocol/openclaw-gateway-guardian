@@ -97,13 +97,13 @@ The repository does not include private workload data. The stress output records
 
 The `skill/` directory includes a small public skill pack for OpenClaw maintainers:
 
-- `openclaw-agent-loop`: bounded diagnose/change/validate/keep-or-revert loop.
-- `openclaw-copy-guard`: public documentation and release copy review.
-- `openclaw-document-preflight`: local document to source-anchored Markdown planning.
-- `openclaw-document-review`: source-linked review against explicit criteria.
-- `openclaw-evidence-notebook`: local source-constrained evidence notebook.
-- `openclaw-oss-intake`: public open-source project intake before adoption.
-- `openclaw-prompt-optimizer`: turn vague maintainer requests into executable prompts.
+- `oc-agent-loop`: bounded diagnose/change/validate/keep-or-revert loop.
+- `oc-copy-guard`: public documentation and release copy review.
+- `oc-document-preflight`: local document to source-anchored Markdown planning.
+- `oc-document-review`: source-linked review against explicit criteria.
+- `oc-evidence-notebook`: local source-constrained evidence notebook.
+- `oc-oss-intake`: public open-source project intake before adoption.
+- `oc-prompt-optimizer`: turn vague maintainer requests into executable prompts.
 
 These skills are written as public operator templates. They do not include non-public project code, runtime logs, account data, or deployment-specific configuration.
 
@@ -130,17 +130,17 @@ OpenClaw Gateway Guardian 是一个面向 OpenClaw 的轻量级网关可靠性�
 ## Repository Layout
 
 ```text
-skill/openclaw-gateway-guardian/
+skill/oc-gateway-guardian/
   SKILL.md
   references/failure_modes.md
 
-skill/openclaw-agent-loop/
-skill/openclaw-copy-guard/
-skill/openclaw-document-preflight/
-skill/openclaw-document-review/
-skill/openclaw-evidence-notebook/
-skill/openclaw-oss-intake/
-skill/openclaw-prompt-optimizer/
+skill/oc-agent-loop/
+skill/oc-copy-guard/
+skill/oc-document-preflight/
+skill/oc-document-review/
+skill/oc-evidence-notebook/
+skill/oc-oss-intake/
+skill/oc-prompt-optimizer/
 
 scripts/
   openclaw_gateway_guard_lib.mjs
