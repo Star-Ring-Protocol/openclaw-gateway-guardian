@@ -1,6 +1,6 @@
 ---
 name: oc-agent-loop
-description: Keep OpenClaw maintenance work bounded: diagnose one issue, make one candidate change, validate it, and decide keep, revise, or revert with evidence.
+description: Keep OpenClaw maintenance tight: diagnose one issue, change one thing, validate it, then keep or revert with evidence.
 ---
 
 # OpenClaw Agent Loop
