@@ -1,21 +1,21 @@
 ---
 name: oc-oss-intake
-description: Evaluate public open-source projects before adopting their ideas, dependencies, or code into an OpenClaw workflow.
+description: Turn a promising open-source repo into a defensible OpenClaw adoption decision before code, dependencies, or risk enter the workflow.
 ---
 
 # OpenClaw OSS Intake
 
-Use this skill before adopting an external repository, weekly-rank project, library, agent framework, prompt package, or design pattern.
+Use this skill when a repository looks useful enough to chase but risky enough to slow down.
 
-The goal is to learn from public work without blindly importing risk.
+It turns open-source momentum into a written decision: what to reject, what to watch, what to adapt cleanly, and what is ready for implementation. Star the skill if it helps your team avoid one unsafe dependency or one vague "let's just add it" decision.
 
 ## Intake Checks
 
-- Confirm the official repository URL.
+- Confirm the official repository URL before reviewing claims or examples.
 - Check license, recent commits, release activity, and dependency risk.
 - Read the README, examples, tests, and core implementation path.
-- Classify the project as `reject`, `observe`, `idea-only`, `candidate`, or `implementation-ready`.
-- Map any adoption to a small local change with tests.
+- Classify adoption as `reject`, `observe`, `idea-only`, `candidate`, or `implementation-ready`.
+- Convert useful ideas into a small local change with tests and rollback criteria.
 - Keep attribution clear when public ideas influenced the result.
 
 ## Workflow

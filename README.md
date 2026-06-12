@@ -102,8 +102,8 @@ The `skill/` directory includes a small public skill pack for OpenClaw maintaine
 - `oc-document-preflight`: local document to source-anchored Markdown planning.
 - `oc-document-review`: source-linked review against explicit criteria.
 - `oc-evidence-notebook`: local source-constrained evidence notebook.
-- `oc-oss-intake`: public open-source project intake before adoption.
-- `oc-prompt-optimizer`: turn vague maintainer requests into executable prompts.
+- `oc-oss-intake`: turn a promising repository into a defensible adoption decision.
+- `oc-prompt-optimizer`: turn vague maintainer intent into an execution-ready prompt.
 
 These skills are written as public operator templates. They do not include non-public project code, runtime logs, account data, or deployment-specific configuration.
 
