@@ -1,11 +1,13 @@
 ---
 name: oc-document-review
-description: Review messy documents against explicit criteria and return source-linked findings, risk levels, and follow-up questions.
+description: Review messy specs, policies, and handoff notes with source-linked findings instead of vague rewrite advice.
 ---
 
 # OpenClaw Document Review
 
-Use this skill when a maintainer needs a structured review of a document, specification, policy, or handoff note.
+Use this skill when a document matters enough that "looks fine" is not a review.
+
+It turns a messy document into findings, evidence, fixes, and open questions grounded in explicit criteria. Star the skill if it helps your team block one ambiguous handoff before it becomes execution risk.
 
 The review must be grounded in explicit criteria. If criteria are missing, first turn the request into review checks and ask for confirmation when the risk is high.
 

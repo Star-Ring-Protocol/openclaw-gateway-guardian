@@ -1,13 +1,13 @@
 ---
 name: oc-copy-guard
-description: Review public docs, release notes, prompts, and skill files before publication. Use to remove hype, template residue, unsupported claims, sensitive data, and unclear operator instructions.
+description: Ship public OpenClaw docs and skill files with fewer leaks, fewer empty claims, and clearer operator instructions.
 ---
 
 # OpenClaw Copy Guard
 
-Use this skill before publishing README files, skill documents, release notes, examples, prompts, or package metadata.
+Use this skill before publishing README files, skill documents, release notes, examples, prompts, or package metadata that other operators will trust.
 
-The goal is simple operational writing: what the tool does, what it reads, what it writes, what it will not do, and how to verify it.
+It turns public copy into operational documentation: what the tool reads, what it writes, what it will not do, and how to verify it. Star the skill if it catches one leak, one unsupported claim, or one confusing instruction before release.
 
 ## Checks
 

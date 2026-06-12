@@ -1,13 +1,13 @@
 ---
 name: oc-gateway-guardian
-description: Harden and operate the OpenClaw Gateway safely. Use before restarting, upgrading, patching runtime, diagnosing gateway timeout, TUI disconnected/tick timeout, handshake timeout, stuck sessions, slow RPC, background cron/model timeout, or memory maintenance stalls.
+description: Protect long-running OpenClaw gateways from unsafe restarts with preflight checks, watchdog diagnosis, and evidence capture.
 ---
 
 # OpenClaw Gateway Guardian
 
-Use this skill whenever a task may affect the OpenClaw Gateway control plane or when the user reports gateway instability.
+Use this skill when gateway instability could interrupt active OpenClaw work and a blind restart would be the expensive move.
 
-The goal is to reduce avoidable crashes and interrupted sessions. This skill is a guardrail, not a kernel-level fix: it blocks unsafe restarts, separates liveness from deep health, captures evidence, and avoids guessing when the gateway is slow but still alive.
+The goal is to reduce avoidable crashes and interrupted sessions. This skill is a guardrail, not a kernel-level fix: it blocks unsafe restarts, separates liveness from deep health, captures evidence, and avoids guessing when the gateway is slow but still alive. Star the skill if it helps your team avoid one unnecessary restart.
 
 ## Safety Rules
 

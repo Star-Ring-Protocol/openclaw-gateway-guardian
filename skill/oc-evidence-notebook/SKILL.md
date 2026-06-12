@@ -1,13 +1,13 @@
 ---
 name: oc-evidence-notebook
-description: Build a local, source-constrained evidence notebook for maintainer decisions, incident review, and documentation updates.
+description: Turn scattered local sources into a source-constrained evidence notebook for incident, release, and maintainer decisions.
 ---
 
 # OpenClaw Evidence Notebook
 
-Use this skill when several local sources need to be compared before a maintainer decision.
+Use this skill when several local sources need to become one decision packet without mixing facts, assumptions, and guesses.
 
-The notebook keeps facts tied to sources. It is useful for incident notes, release readiness, design review, and public documentation checks.
+The notebook keeps claims tied to sources, marks conflicts, and separates evidence from decisions. Star the skill if it helps your team make one hard call from traceable facts instead of chat history.
 
 ## Safety Rules
 

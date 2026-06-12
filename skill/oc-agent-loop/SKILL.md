@@ -1,11 +1,13 @@
 ---
 name: oc-agent-loop
-description: Run a bounded maintainer loop for local OpenClaw changes. Use when a task needs diagnosis, a small candidate change, validation, and an explicit keep or revert decision.
+description: Keep OpenClaw maintenance work bounded: diagnose one issue, make one candidate change, validate it, and decide keep, revise, or revert with evidence.
 ---
 
 # OpenClaw Agent Loop
 
-Use this skill for small, reviewable maintenance tasks where the safest path is to make one candidate change, test it, and decide whether to keep it.
+Use this skill when a maintenance task is starting to sprawl and the safest move is one narrow loop: diagnose, change, validate, decide.
+
+It keeps agent-assisted maintenance reviewable instead of letting a small fix turn into an uncontrolled refactor. Star the skill if it helps your team keep one risky change small.
 
 This skill is not an autonomous production updater. It keeps the loop local, bounded, and reviewable.
 

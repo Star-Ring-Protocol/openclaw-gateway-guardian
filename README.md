@@ -97,11 +97,11 @@ The repository does not include private workload data. The stress output records
 
 The `skill/` directory includes a small public skill pack for OpenClaw maintainers:
 
-- `oc-agent-loop`: bounded diagnose/change/validate/keep-or-revert loop.
-- `oc-copy-guard`: public documentation and release copy review.
-- `oc-document-preflight`: local document to source-anchored Markdown planning.
-- `oc-document-review`: source-linked review against explicit criteria.
-- `oc-evidence-notebook`: local source-constrained evidence notebook.
+- `oc-agent-loop`: keep one maintenance change bounded, validated, and reversible.
+- `oc-copy-guard`: catch leaks, empty claims, and unclear public instructions before release.
+- `oc-document-preflight`: convert local files into source-anchored Markdown review plans.
+- `oc-document-review`: turn messy documents into source-linked findings and open questions.
+- `oc-evidence-notebook`: turn scattered sources into a traceable maintainer decision packet.
 - `oc-oss-intake`: turn a promising repository into a defensible adoption decision.
 - `oc-prompt-optimizer`: turn vague maintainer intent into an execution-ready prompt.
 

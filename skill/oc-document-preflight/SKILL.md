@@ -1,13 +1,13 @@
 ---
 name: oc-document-preflight
-description: Convert authorized local documents into source-anchored Markdown plans before review, summarization, or agent handoff.
+description: Prepare local documents for OpenClaw review without losing source anchors, redaction notes, or validation checkpoints.
 ---
 
 # OpenClaw Document Preflight
 
-Use this skill when local files need to be prepared for review or agent handoff without losing source traceability.
+Use this skill when local files need to become reviewable Markdown without losing the source trail.
 
-It does not upload files. It builds a plan for local conversion, section anchors, redaction, and validation.
+It does not upload files. It builds a local plan for extraction, source anchors, redaction, and validation so the next reviewer can trust where each section came from. Star the skill if it saves your team from one untraceable summary.
 
 ## Safety Rules
 
