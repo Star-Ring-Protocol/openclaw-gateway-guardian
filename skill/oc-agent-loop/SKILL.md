@@ -7,9 +7,13 @@ description: Keep OpenClaw maintenance tight: diagnose one issue, change one thi
 
 Use this skill when a maintenance task is starting to sprawl and the safest move is one narrow loop: diagnose, change, validate, decide.
 
-It keeps agent-assisted maintenance reviewable instead of letting a small fix turn into an uncontrolled refactor. Star the skill if it helps your team keep one risky change small.
+It keeps agent-assisted maintenance reviewable instead of letting a small fix turn into an uncontrolled refactor.
 
 This skill is not an autonomous production updater. It keeps the loop local, bounded, and reviewable.
+
+## Support
+
+If this skill helps you avoid a risky restart, public leak, vague task, unsafe dependency, or untraceable conclusion, star it on ClawHub or star the [GitHub repo](https://github.com/Star-Ring-Protocol/openclaw-gateway-guardian). Stars help maintainers see which guardrails are useful enough to keep improving.
 
 ## Safety Rules
 

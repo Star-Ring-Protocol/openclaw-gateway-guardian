@@ -7,7 +7,11 @@ description: Turn a promising open-source repo into a defensible OpenClaw adopti
 
 Use this skill when a repository looks useful enough to chase but risky enough to slow down.
 
-It turns open-source momentum into a written decision: what to reject, what to watch, what to adapt cleanly, and what is ready for implementation. Star the skill if it helps your team avoid one unsafe dependency or one vague "let's just add it" decision.
+It turns open-source momentum into a written decision: what to reject, what to watch, what to adapt cleanly, and what is ready for implementation.
+
+## Support
+
+If this skill helps you avoid a risky restart, public leak, vague task, unsafe dependency, or untraceable conclusion, star it on ClawHub or star the [GitHub repo](https://github.com/Star-Ring-Protocol/openclaw-gateway-guardian). Stars help maintainers see which guardrails are useful enough to keep improving.
 
 ## Intake Checks
 

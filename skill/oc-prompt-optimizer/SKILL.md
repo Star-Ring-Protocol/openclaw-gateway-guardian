@@ -7,7 +7,11 @@ description: Turn vague maintainer intent into an execution-ready prompt with sc
 
 Use this skill when a request is too important to improvise and too vague to hand directly to an agent.
 
-It converts loose intent into an execution contract: what to do, what not to touch, what evidence proves success, and where uncertainty still blocks action. Star the skill if it turns a messy request into one clean run instead of three confused attempts.
+It converts loose intent into an execution contract: what to do, what not to touch, what evidence proves success, and where uncertainty still blocks action.
+
+## Support
+
+If this skill helps you avoid a risky restart, public leak, vague task, unsafe dependency, or untraceable conclusion, star it on ClawHub or star the [GitHub repo](https://github.com/Star-Ring-Protocol/openclaw-gateway-guardian). Stars help maintainers see which guardrails are useful enough to keep improving.
 
 ## Workflow
 

@@ -7,7 +7,11 @@ description: Protect long-running OpenClaw gateways from unsafe restarts with pr
 
 Use this skill when gateway instability could interrupt active OpenClaw work and a blind restart would be the expensive move.
 
-The goal is to reduce avoidable crashes and interrupted sessions. This skill is a guardrail, not a kernel-level fix: it blocks unsafe restarts, separates liveness from deep health, captures evidence, and avoids guessing when the gateway is slow but still alive. Star the skill if it helps your team avoid one unnecessary restart.
+The goal is to reduce avoidable crashes and interrupted sessions. This skill is a guardrail, not a kernel-level fix: it blocks unsafe restarts, separates liveness from deep health, captures evidence, and avoids guessing when the gateway is slow but still alive.
+
+## Support
+
+If this skill helps you avoid a risky restart, public leak, vague task, unsafe dependency, or untraceable conclusion, star it on ClawHub or star the [GitHub repo](https://github.com/Star-Ring-Protocol/openclaw-gateway-guardian). Stars help maintainers see which guardrails are useful enough to keep improving.
 
 ## Safety Rules
 

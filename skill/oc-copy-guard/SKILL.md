@@ -7,7 +7,11 @@ description: Ship public OpenClaw docs and skill files with fewer leaks, fewer e
 
 Use this skill before publishing README files, skill documents, release notes, examples, prompts, or package metadata that other operators will trust.
 
-It turns public copy into operational documentation: what the tool reads, what it writes, what it will not do, and how to verify it. Star the skill if it catches one leak, one unsupported claim, or one confusing instruction before release.
+It turns public copy into operational documentation: what the tool reads, what it writes, what it will not do, and how to verify it.
+
+## Support
+
+If this skill helps you avoid a risky restart, public leak, vague task, unsafe dependency, or untraceable conclusion, star it on ClawHub or star the [GitHub repo](https://github.com/Star-Ring-Protocol/openclaw-gateway-guardian). Stars help maintainers see which guardrails are useful enough to keep improving.
 
 ## Checks
 

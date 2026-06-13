@@ -7,7 +7,11 @@ description: Prepare local documents for OpenClaw review without losing source a
 
 Use this skill when local files need to become reviewable Markdown without losing the source trail.
 
-It does not upload files. It builds a local plan for extraction, source anchors, redaction, and validation so the next reviewer can trust where each section came from. Star the skill if it saves your team from one untraceable summary.
+It does not upload files. It builds a local plan for extraction, source anchors, redaction, and validation so the next reviewer can trust where each section came from.
+
+## Support
+
+If this skill helps you avoid a risky restart, public leak, vague task, unsafe dependency, or untraceable conclusion, star it on ClawHub or star the [GitHub repo](https://github.com/Star-Ring-Protocol/openclaw-gateway-guardian). Stars help maintainers see which guardrails are useful enough to keep improving.
 
 ## Safety Rules
 

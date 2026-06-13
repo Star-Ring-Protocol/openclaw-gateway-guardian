@@ -107,6 +107,8 @@ The `skill/` directory includes a small public skill pack for OpenClaw maintaine
 
 These skills are written as public operator templates. They do not include non-public project code, runtime logs, account data, or deployment-specific configuration.
 
+If this pack helps you avoid a risky restart, public leak, vague task, unsafe dependency, or untraceable review, star the GitHub repo or the matching ClawHub skill. Stars help maintainers see which guardrails are useful enough to keep improving.
+
 ## Chinese Overview / 中文简介
 
 OpenClaw Gateway Guardian 是一个面向 OpenClaw 的轻量级网关可靠性工具，由 **小乙-星环协议** 出品。
