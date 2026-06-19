@@ -1,6 +1,6 @@
 {
   "name": "openclaw-gateway-guardian",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "producer": "小乙-星环协议 / XiaoYi · Star Ring Protocol",
   "license": "MIT",
   "description": "Lightweight OpenClaw gateway reliability checks for restart preflight, watchdog diagnosis, and synthetic stress probes.",
@@ -10,8 +10,17 @@
     "agent gateway operations"
   ],
   "components": {
-    "skill": "skill/openclaw-gateway-guardian/SKILL.md",
-    "failure_modes": "skill/openclaw-gateway-guardian/references/failure_modes.md",
+    "primary_skill": "skill/oc-gateway-guardian/SKILL.md",
+    "maintainer_skills": [
+      "skill/oc-agent-loop/SKILL.md",
+      "skill/oc-copy-guard/SKILL.md",
+      "skill/oc-document-preflight/SKILL.md",
+      "skill/oc-document-review/SKILL.md",
+      "skill/oc-evidence-notebook/SKILL.md",
+      "skill/oc-oss-intake/SKILL.md",
+      "skill/oc-prompt-optimizer/SKILL.md"
+    ],
+    "failure_modes": "skill/oc-gateway-guardian/references/failure_modes.md",
     "scripts": [
       "scripts/openclaw_gateway_guard_lib.mjs",
       "scripts/openclaw_gateway_guard_preflight.mjs",

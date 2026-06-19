@@ -1,13 +1,17 @@
 ---
-name: openclaw-gateway-guardian
-description: Harden and operate the OpenClaw Gateway safely. Use before restarting, upgrading, patching runtime, diagnosing gateway timeout, TUI disconnected/tick timeout, handshake timeout, stuck sessions, slow RPC, background cron/model timeout, or memory maintenance stalls.
+name: oc-gateway-guardian
+description: Protect long-running OpenClaw gateways from unsafe restarts with preflight checks, watchdog diagnosis, and evidence capture.
 ---
 
 # OpenClaw Gateway Guardian
 
-Use this skill whenever a task may affect the OpenClaw Gateway control plane or when the user reports gateway instability.
+Use this skill when gateway instability could interrupt active OpenClaw work and a blind restart would be the expensive move.
 
 The goal is to reduce avoidable crashes and interrupted sessions. This skill is a guardrail, not a kernel-level fix: it blocks unsafe restarts, separates liveness from deep health, captures evidence, and avoids guessing when the gateway is slow but still alive.
+
+## Support
+
+If this skill helps you avoid a risky restart, public leak, vague task, unsafe dependency, or untraceable conclusion, star it on ClawHub or star the [GitHub repo](https://github.com/Star-Ring-Protocol/openclaw-gateway-guardian). Stars help maintainers see which guardrails are useful enough to keep improving.
 
 ## Safety Rules
 
@@ -66,7 +70,7 @@ Then explain:
 For details and triage patterns, read:
 
 ```sh
-$OPENCLAW_ROOT/workspace/skills/openclaw-gateway-guardian/references/failure_modes.md
+$OPENCLAW_ROOT/workspace/skills/oc-gateway-guardian/references/failure_modes.md
 ```
 
 Load it only when diagnosing a real incident or modifying the guardian scripts.

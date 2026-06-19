@@ -32,6 +32,7 @@ Gateway Guardian separates these cases before an operator restarts the process.
 - **Dry-run restart wrapper**: shows what would happen without touching the gateway.
 - **Synthetic stress run**: probes health, status, task, audit, tool, and memory-search paths under bounded load.
 - **Memory degradation detection**: flags `sqlite-vec unavailable`, degraded vector recall, stuck sessions, cron/model timeouts, and related long-tail risks.
+- **Maintainer skills**: installs reusable OpenClaw skill templates for bounded agent loops, public copy review, document preflight, evidence notebooks, OSS intake, document review, and prompt optimization.
 
 ## What It Does Not Do
 
@@ -92,6 +93,22 @@ The stress runner uses synthetic workloads for common gateway pressure patterns:
 
 The repository does not include private workload data. The stress output records whether gateway health, status, task audit, memory/search paths, and guardian checks still behave under load.
 
+## Maintainer Skill Pack
+
+The `skill/` directory includes a small public skill pack for OpenClaw maintainers:
+
+- `oc-agent-loop`: keep one maintenance change bounded, validated, and reversible.
+- `oc-copy-guard`: catch leaks, empty claims, and unclear public instructions before release.
+- `oc-document-preflight`: convert local files into source-anchored Markdown review plans.
+- `oc-document-review`: turn messy documents into source-linked findings and open questions.
+- `oc-evidence-notebook`: turn scattered sources into a traceable maintainer decision packet.
+- `oc-oss-intake`: turn a promising repository into a defensible adoption decision.
+- `oc-prompt-optimizer`: turn vague maintainer intent into an execution-ready prompt.
+
+These skills are written as public operator templates. They do not include non-public project code, runtime logs, account data, or deployment-specific configuration.
+
+If this pack helps you avoid a risky restart, public leak, vague task, unsafe dependency, or untraceable review, star the GitHub repo or the matching ClawHub skill. Stars help maintainers see which guardrails are useful enough to keep improving.
+
 ## Chinese Overview / 中文简介
 
 OpenClaw Gateway Guardian 是一个面向 OpenClaw 的轻量级网关可靠性工具，由 **小乙-星环协议** 出品。
@@ -115,9 +132,17 @@ OpenClaw Gateway Guardian 是一个面向 OpenClaw 的轻量级网关可靠性�
 ## Repository Layout
 
 ```text
-skill/openclaw-gateway-guardian/
+skill/oc-gateway-guardian/
   SKILL.md
   references/failure_modes.md
+
+skill/oc-agent-loop/
+skill/oc-copy-guard/
+skill/oc-document-preflight/
+skill/oc-document-review/
+skill/oc-evidence-notebook/
+skill/oc-oss-intake/
+skill/oc-prompt-optimizer/
 
 scripts/
   openclaw_gateway_guard_lib.mjs
